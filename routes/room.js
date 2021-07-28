@@ -14,6 +14,7 @@ router.post("/createroom", async (req, res) => {
     });
   });
 });
+
 router.get("/", async (req, res) => {
   roomlists.find({}, (error, rooms) => {
     if (error) {
